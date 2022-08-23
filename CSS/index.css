@@ -68,6 +68,7 @@ a {
     width: 50px;
     height: 50px;
     margin-left: 20px;
+    cursor: pointer;
 }
 
 .content {
@@ -92,7 +93,7 @@ a {
 }
 
 .content button {
-    padding: 15px;
+    padding: 25px;
     border: 0;
     border-radius: 10px;
     font-weight: bold;
@@ -100,7 +101,7 @@ a {
 }
 
 .start {
-    margin-left: 35%;
+    margin-left: 30%;
 }
 
 .more {
@@ -110,7 +111,7 @@ a {
 
 .content button:hover {
     opacity: 0.4;
-    transition: 2s;
+    transition: 1s;
 }
 
 .section {
@@ -125,8 +126,7 @@ a {
     border: 3px solid rgb(240, 88, 50);
     display: inline-block;
     margin: 30px;
-    transition: 2s;
-    cursor: pointer;
+    transition: 1s;
 }
 
 .explore i,
@@ -169,8 +169,11 @@ a {
 }
 
 .explore:hover a {
-    font-size: larger;
     transition: 1s;
+    background-color: white;
+    color: rgb(240, 88, 50);
+    font-weight: bold;
+    cursor: pointer;
 }
 
 div>h2 {
@@ -259,7 +262,8 @@ div>h2 {
     word-spacing: 5px;
     transform: uppercase;
     width: 500px;
-    background-color: rgb(223, 222, 222)
+    background-color: rgb(223, 222, 222);
+    font-weight: bolder;
 }
 
 .list-q {
@@ -310,7 +314,7 @@ div>h2 {
     display: inline-block;
     text-align: center;
     padding: 5px;
-    color: rgb(240, 88, 50);
+    color: rgb(255, 255, 255);
     cursor: pointer;
 }
 
@@ -322,7 +326,7 @@ div>h2 {
 }
 
 .icon i {
-    font-size: 30px;
+    font-size: 35px;
 }
 
 .icon p {
@@ -330,7 +334,7 @@ div>h2 {
 }
 
 .pricing {
-    background-color: rgb(212, 211, 211);
+    background-color: rgb(255, 255, 255);
     padding-bottom: 50px;
 }
 
@@ -350,12 +354,12 @@ div>h2 {
     display: inline-block;
     width: 20%;
     margin-left: 10%;
-    padding-bottom: 20px;
-    border: 1px solid rgb(95, 95, 95);
+    padding-bottom: 50px;
+    border: 1px solid rgb(0 0 0);
     text-align: center;
     padding-right: 5px;
     position: relative;
-    background-color: rgb(223, 222, 222);
+    background-color: rgb(255 255 255);
 }
 
 .price {
@@ -385,12 +389,11 @@ div>h2 {
 .item:before {
     content: " ";
     position: absolute;
-    background-color: rgba(90, 90, 90, 0.514);
-
-    top: 0;
-    left: 0;
+    background-color: rgb(135 133 133 / 35%);
+    top: 0px;
+    left: 0px;
     width: 100%;
-    height: 0;
+    height: 0px;
 }
 
 .item:hover:before {
@@ -403,6 +406,10 @@ div>h2 {
     padding: 10px;
     background-color: none;
     border: 1px solid rgb(240, 88, 50);
+    position: absolute;
+    z-index: 5;
+    left: 37%;
+    cursor: pointer;
 }
 
 .members {
@@ -482,7 +489,6 @@ div>h2 {
     margin-left: 10%;
     text-align: center;
     position: relative;
-    cursor: pointer;
 }
 
 .travel-container {
@@ -514,6 +520,8 @@ div>h2 {
     position: absolute;
     top: 30;
     right: 22;
+    z-index: 5;
+    cursor: pointer;
 }
 
 .travel-icons i {
@@ -522,6 +530,7 @@ div>h2 {
     width: 60px;
     background-color: rgb(240, 88, 50);
     color: white;
+    border: 1px solid gray;
 }
 
 .travel-item:hover i {
@@ -545,6 +554,7 @@ div>h2 {
     display: inline-block;
     border: 1px solid gray;
     padding: 15px;
+    padding-bottom: 50px;
     background-color: rgb(223, 222, 222);
     position: relative;
     cursor: pointer;
@@ -573,6 +583,12 @@ div>h2 {
 }
 
 .offers-item a {
+    position: absolute;
+    left: 40%;
+    z-index: 5;
+}
+
+.offers-item a {
     border: 2px solid rgb(240, 88, 50);
     text-align: center;
     padding: 10px;
@@ -581,8 +597,8 @@ div>h2 {
     display: inline-block;
     margin-bottom: 10px;
     color: white;
+    transition: 0.5s;
 }
-
 
 .footer {
     width: 100%;
@@ -603,10 +619,11 @@ div>h2 {
 .footer-container img {
     width: 100px;
     height: 100px;
+    cursor: pointer;
 }
 
 .footer-icons i {
-    font-size: 50px;
+    font-size: 40px;
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -616,6 +633,6 @@ div>h2 {
 }
 
 .footer-icons i:hover {
-    transition: 1s;
-    font-size: 60px;
+    transition: 0.5s;
+    font-size: 50px;
 }
